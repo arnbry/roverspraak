@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Text;
 
 namespace roverspraak.Server.Controllers
 {
@@ -51,15 +52,6 @@ namespace roverspraak.Server.Controllers
 
             })
             .ToArray();
-        }
-        public string ConvertToRoverSpraak(string OriginalText) 
-        {
-            var RoverSpraak = OriginalText;
-            //need to know what is consonants and vowels
-            //need to add o to a consonant, and then the consonant again after it
-            //need to ignore vowels
-
-            return RoverSpraak;
         }
     }
 }
