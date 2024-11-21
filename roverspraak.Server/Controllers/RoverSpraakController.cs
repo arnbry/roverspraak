@@ -46,6 +46,7 @@ namespace roverspraak.Server.Controllers
         {
             return Enumerable.Range(1, 8).Select(index => new RoverSpraak
             {
+                Id = Guid.NewGuid().ToString(),
                 Created = DateOnly.FromDateTime(DateTime.Now.AddHours(index)),
                 Alias = Aliases[Random.Shared.Next(Aliases.Length)],
                 OriginalText = Messages[Random.Shared.Next(Messages.Length)]
