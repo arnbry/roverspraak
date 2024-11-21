@@ -1,0 +1,6 @@
+@roverspraak.Server_HostAddress = http://localhost:5120
+
+GET {{roverspraak.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
